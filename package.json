@@ -44,11 +44,11 @@
     "rollup-plugin-coffee-script": "^2.0.0",
     "rollup-plugin-terser": "^5.2.0",
     "rollup-plugin-vue": "^5.1.6",
+    "vue": "^2.6.11",
     "vue-cli-plugin-coffeescript": "0.0.3",
     "vue-material-design-icons": "^4.4.0",
     "vue-ribbon": "^1.0.1",
-    "vue-template-compiler": "^2.6.11",
-    "vue": "^2.6.11"
+    "vue-template-compiler": "^2.6.11"
   },
   "peerDependencies": {},
   "postcss": {
