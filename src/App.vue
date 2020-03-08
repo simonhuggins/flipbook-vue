@@ -5,13 +5,14 @@
     @touchstart="hasMouse = false"
   >
     <Ribbon
-      text="Fork me on GitHub"
+      text="Fork me on GitHub, you devil"
       url="https://github.com/ts1/flipbook-vue"
     />
     <Flipbook
       class="flipbook"
       :pages="pages"
       :pagesHiRes="pagesHiRes"
+      :pagesText="pagesText"
       :startPage="pageNum"
       v-slot="flipbook"
       ref="flipbook"
@@ -70,6 +71,7 @@ export default
   data: ->
     pages: [],
     pagesHiRes: [],
+    pagesText: [],
     hasMouse: true
     pageNum: null
   methods:
@@ -112,6 +114,15 @@ export default
         'images-large/4.jpg'
         'images-large/5.jpg'
         'images-large/6.jpg'
+      ]
+      @pagesText = [
+        null
+        '<h1>This is Page 1</h1><p>And a jolly nice page it is, oh yes.</p>'
+        '<h1>This is Page 2</h1><p>And a jolly nice page it is, oh yes.</p>'
+        '<h1>This is Page 3</h1><p>And a jolly nice page it is, oh yes.</p>'
+        '<h1>This is Page 4</h1><p>And a jolly nice page it is, oh yes.</p>'
+        '<h1>This is Page 5</h1><p>And a jolly nice page it is, oh yes.</p>'
+        '<h1>This is Page 6</h1><p>And a jolly nice page it is, oh yes.</p>'
       ]
     ), 1
 

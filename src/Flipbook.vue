@@ -134,6 +134,9 @@ export default
     pagesHiRes:
       type: Array
       default: -> []
+    pagesText:
+      type: Array
+      default: -> []
     flipDuration:
       type: Number
       default: 1000
